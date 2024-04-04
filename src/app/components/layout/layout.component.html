@@ -1,0 +1,33 @@
+
+<!-- Loader -->
+<div class="loader" id="loader-fade">
+  <div class="dot-container">
+      <div class="dot dot-1"></div>
+      <div class="dot dot-2"></div>
+      <div class="dot dot-3"></div>
+  </div>
+
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+      <defs>
+          <filter id="goo">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+              <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -7"></feColorMatrix>
+          </filter>
+      </defs>
+  </svg>
+</div>
+<!-- Loader ends -->
+
+<app-header></app-header>
+
+<router-outlet></router-outlet>
+<app-footer></app-footer>
+<!--Animated Cursor-->
+<div id="animated-cursor">
+<div id="cursor">
+  <div id="cursor-loader"></div>
+</div>
+</div>
+<!--Animated Cursor End-->
+<!-- <router-outlet></router-outlet> -->
+
