@@ -520,5 +520,11 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
 
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
        
