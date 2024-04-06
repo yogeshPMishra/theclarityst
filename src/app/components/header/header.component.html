@@ -115,7 +115,7 @@
 <header>
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  
+
 
   <!-- <div class="navbar_new">
     <a href="#">Home</a>
@@ -128,7 +128,7 @@
       <a href="#">Performance Coaching</a>
       <a href="#">Team Coaching</a>
       </div>
-    </div> 
+    </div>
     <div class="subnav">
       <button class="subnavbtn"><a href="#">Unconventional</a> <i class="fa fa-caret-down"></i></button>
       <div class="subnav-content">
@@ -136,60 +136,58 @@
         <a href="#deliver">Blog</a>
         <a href="#package">Whitepapers</a>
       </div>
-    </div> 
+    </div>
     <a href="#">Community</a>
     <a href="#">Contact Us</a>
   </div> -->
-  
+
   <nav class="navbar">
     <ul class="nav-list">
       <li><a href="#">Home</a></li>
-      <li class="dropdown">
+      <li class="dropdown"  (click)="submenuOpen1()">
         <!-- <a href="#">Services</a><i class="fa fa-caret-down"></i> -->
-        <button class="subnavbtn" style="padding-left: 0;"><a href="#">Services</a> <i class="fa fa-caret-down" style="padding-top: 20px;"></i></button>
-        <ul class="dropdown-content">
+        <button class="subnavbtn" style="padding-left: 0;"><a style="color: white;">Services</a> <i class="fa fa-caret-down" style="padding-top: 20px; color: white;"></i></button>
+        <ul class="dropdown-content" *ngIf="isMenuOpen">
           <!-- <li><a href="#">Corporate Coaching</a></li> -->
-          <li class="sub-dropdown">
+          <li class="sub-dropdown" (click)="innerMenuOpen1($event)">
             <!-- <a href="#">Corporate Coaching</a> -->
-            <button class="subnavbtn"><a href="#">Corporate Coaching</a> <i class="fa fa-caret-down" style="padding-top: 20px;"></i></button>
-            <ul class="sub-dropdown-content">
+            <button class="subnavbtn" ><a style="color: white;">Corporate Coaching</a> <i class="fa fa-caret-down" style="padding-top: 20px;color: white;"></i></button>
+            <ul class="sub-dropdown-content" *ngIf="isSubmenuOpen">
               <li><a href="#">Manager Coaching</a></li>
               <li><a href="#">Sales Coaching</a></li>
               <li><a href="#">Performance Coaching</a></li>
               <li><a href="#">Team Coaching</a></li>
             </ul>
           </li>
-          <li class="sub-dropdown">
+          <li class="sub-dropdown" (click)="innerMenuOpen2($event)">
             <!-- <a href="#">Specialised Coaching</a> -->
-            <button class="subnavbtn"><a href="#">Specialised Coaching</a> <i class="fa fa-caret-down" style="padding-top: 20px;"></i></button>
-            <ul class="sub-dropdown-content">
+            <button class="subnavbtn"><a style="color: white;" >Specialised Coaching</a> <i class="fa fa-caret-down" style="padding-top: 20px; color: white;"></i></button>
+            <ul class="sub-dropdown-content" *ngIf="isSubmenuOpen1">
               <li><a href="#">For leaders in digital transformation</a></li>
               <li><a href="#">For women leaders and professionals</a></li>
               <li><a href="#">For entrepreneurs</a></li>
             </ul>
           </li>
           <li><a href="#">Micro Coaching</a></li>
-          <li class="sub-dropdown">
+          <li class="sub-dropdown" (click)="innerMenuOpen3($event)">
             <!-- <a href="#">Projects</a> -->
-            <button class="subnavbtn"><a href="#">Projects</a> <i class="fa fa-caret-down" style="padding-top: 20px;"></i></button>
-            <ul class="sub-dropdown-content">
+            <button class="subnavbtn"><a style="color: white;">Projects</a> <i class="fa fa-caret-down" style="padding-top: 20px;color: white;"></i></button>
+            <ul class="sub-dropdown-content" *ngIf="isSubmenuOpen2">
               <li><a href="#">Leading career pivots and transitions</a></li>
               <li><a href="#">Talent acquisition through a culture lens</a></li>
               <li><a href="#">For entrepreneurs</a></li>
             </ul>
           </li>
-              </ul>
+        </ul>
       </li>
-      <li class="dropdown">
+      <li class="dropdown" (click)="submenuOpen2()">
         <!-- <a href="#">Unconventional</a> -->
-        <button class="subnavbtn" style="padding-left: 0;"><a href="#">Unconventional</a> <i class="fa fa-caret-down" style="padding-top: 21px;"></i></button>
-        <ul class="dropdown-content">
+        <button class="subnavbtn" style="padding-left: 0;"><a style="color: white;">Unconventional</a> <i class="fa fa-caret-down" style="padding-top: 21px; color: white;"></i></button>
+        <ul class="dropdown-content" *ngIf="isMenuOpen1">
           <li><a href="#">Podcast</a></li>
               <li><a href="#">Blog</a></li>
               <li><a href="#">Whitepapers</a></li>
-
         </ul>
-
       </li>
       <li><a href="#">Contact Us</a></li>
     </ul>

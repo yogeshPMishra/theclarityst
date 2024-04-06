@@ -19,8 +19,8 @@ export class HomeWorksComponent {
     SCRIPT_PATHS.forEach(scriptPath => {
       this.loadScript(scriptPath);
     });
-
   }
+
   loadScript(scriptPath: string): void {
     const scriptElement = this.scriptService.loadJsScript(this.renderer, scriptPath);
     scriptElement.onload = () => {
