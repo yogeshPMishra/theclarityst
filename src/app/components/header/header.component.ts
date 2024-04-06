@@ -11,6 +11,7 @@ export class HeaderComponent {
   isSubmenuOpen1 = false;
   isSubmenuOpen2 = false;
   isMenuOpen1 = false;
+  isNavOpen = false;
   rotateArrow: string = "";
   submenuOpen1(){
     this.isMenuOpen = !this.isMenuOpen;
@@ -30,5 +31,12 @@ export class HeaderComponent {
   innerMenuOpen3(event: Event){
     this.isSubmenuOpen2 = !this.isSubmenuOpen2;
     event.stopPropagation();
+  }
+
+  openNav1(){
+      this.isNavOpen = true;
+  }
+  closeNav1(event: Event){
+    this.isNavOpen= false;
   }
 }
