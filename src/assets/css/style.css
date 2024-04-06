@@ -2540,6 +2540,7 @@ input.ftsbt {
     margin-left: 14px;
 }
 .mrq img{
+    display: inline;
     padding: 10px;
     margin: 10px;
     border: 1px solid #606060;
@@ -4139,7 +4140,7 @@ button[type="submit"]:hover {
     font-size: 20px;
   }
 
-   .dropdown-content {
+  .dropdown:hover .dropdown-content {
     display: block;
   }
 
@@ -4153,7 +4154,7 @@ button[type="submit"]:hover {
     z-index: 1;
   }
 
- .sub-dropdown-content {
+  .sub-dropdown:hover .sub-dropdown-content {
     display: block;
   }
 
