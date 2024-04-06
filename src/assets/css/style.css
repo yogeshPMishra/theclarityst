@@ -4022,11 +4022,6 @@ button[type="submit"]:hover {
     font-size: 36px;
   }
 
-  @media screen and (max-height: 450px) {
-    .sidenav-side {padding-top: 15px;}
-    .sidenav-side a {font-size: 18px;}
-  }
-
   .navbar {
     padding-top: 50px;
   }
@@ -4089,7 +4084,12 @@ button[type="submit"]:hover {
  .sub-dropdown-content {
     display: block;
   }
-
+  @media screen and (max-width: 450px) {
+    .sidenav-side {padding-top: 15px;}
+    .sidenav-side a {font-size: 18px;}
+    .sidenav-side.opn{width: 300px;}
+    .dropdown-content a, .nav-list li a{font-size: 14px;padding: 4px;}
+  }
   .subnavbtn {
     color: #fff !important;
     cursor: pointer;
