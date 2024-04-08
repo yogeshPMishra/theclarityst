@@ -17,6 +17,7 @@ import { ServiceComponent } from './pages/services/service/service.component';
 import { BlogComponent } from './pages/unconventional/blog/blog.component';
 import { PodcastComponent } from './pages/unconventional/podcast/podcast.component';
 import { CorporateCoachingComponent } from './pages/services/corporate_coaching/corporate-coaching/corporate-coaching.component';
+import { UnconventionalLandingComponent } from './pages/unconventional/unconventional-landing/unconventional-landing.component';
 
 const routes: Routes = [
   {
@@ -83,6 +84,10 @@ const routes: Routes = [
        {
         component : WomenLeadersComponent,
         path :  "women-leader"
+       },
+       {
+        component : UnconventionalLandingComponent,
+        path:"unconventional"
        },
        {
         component : BlogComponent,

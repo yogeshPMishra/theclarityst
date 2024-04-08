@@ -4138,11 +4138,11 @@ button[type="submit"]:hover {
   border: none;
   } */
 
-.blog-main .card__body {
+.blog-main .unconventional-blog .card__body {
     padding: 1rem 0;
     margin-bottom: 30px;
 }
-.blog-main .tag {
+.blog-main  .unconventional-blog .tag {
     padding: .25em .75em;
     border-radius: 1em;
     font-size: .75rem;
@@ -4150,12 +4150,29 @@ button[type="submit"]:hover {
     color: white;
   }
 
-  .blog-main .card__body h4 {
+  .blog-main .unconventional-blog .card__body h4 {
     margin: 5px 0 14px;
     font-weight: 500;
 }
-.blog-main .blg-btn{
+.blog-main .unconventional-blog .blg-btn{
     color: #000;
     border-bottom: 1px solid;
     font-weight: 600;
 }
+.Unconventional_section{
+    padding-top: 60px;
+}
+
+.unconventional-blog .tag {
+    padding: .25em .75em;
+    border-radius: 1em;
+    font-size: .75rem;
+    background-color: #000;
+    color: white;
+  }
+
+  .unconventional-blog .card__image {
+    width: 100%;
+    display: block;
+    height: 200px;
+  }
