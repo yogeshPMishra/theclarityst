@@ -61,15 +61,15 @@
 <section>
   <div class="container" style="border-bottom: 5px solid #ccc;padding-bottom: 3px;">
     <div class="row">
-      <div class="col-md-3"><a href="manager-coaching#Manager_Coaching" class="link_tab"> Manager Coaching</a></div>
-      <div class="col-md-3"><a href="manager-coaching#Sales_Coaching" class="link_tab">Sales Coaching</a></div>
-      <div class="col-md-3"><a href="manager-coaching#Performance_Coaching" class="link_tab">Performance Coaching</a>
+      <div class="col-md-3"><a class="link_tab" (click)="scrollToSection('Manager_Coaching')"  [class.active]="currentSectionId === 'Manager_Coaching'"> Manager Coaching</a></div>
+      <div class="col-md-3"><a  class="link_tab" (click)="scrollToSection('Sales_Coaching')" [class.active]="currentSectionId === 'Sales_Coaching'">Sales Coaching</a></div>
+      <div class="col-md-3"><a class="link_tab" (click)="scrollToSection('Performance_Coaching')" [class.active]="currentSectionId === 'Performance_Coaching'">Performance Coaching</a>
       </div>
-      <div class="col-md-3"><a href="manager-coaching#Team_Coaching" class="link_tab">Team Coaching</a></div>
+      <div class="col-md-3"><a  (click)="scrollToSection('Team_Coaching')"  class="link_tab" [class.active]="currentSectionId === 'Team_Coaching'">Team Coaching</a></div>
     </div>
   </div>
 
-  <section id="Manager_Coaching" style="padding-top: 50px;">
+  <section class="tab-scroll" id="Manager_Coaching" style="padding-top: 50px;">
     <div class="row">
       <div class="col-md-6">
         <img src="assets/images/manage_coaching.png">
@@ -86,7 +86,7 @@
       </div>
     </div>
   </section>
-  <section id="Sales_Coaching">
+  <section id="Sales_Coaching" class="tab-scroll">
     <div class="row">
       <div class="col-md-6">
         <h2 class="font1">Sales Coaching</h2>
@@ -103,7 +103,7 @@
       </div>
     </div>
   </section>
-  <section id="Performance_Coaching">
+  <section id="Performance_Coaching" class="tab-scroll">
     <div class="row">
       <div class="col-md-6">
         <img src="assets/images/Performance_Coaching.png">
@@ -120,7 +120,7 @@
       </div>
     </div>
   </section>
-  <section id="Team_Coaching">
+  <section id="Team_Coaching" class="tab-scroll">
     <div class="row">
       <div class="col-md-6">
         <h2 class="font1">Team Coaching</h2>
