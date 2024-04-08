@@ -30,6 +30,7 @@ import { ServiceComponent } from './pages/services/service/service.component';
 import { PodcastComponent } from './pages/unconventional/podcast/podcast.component';
 import { BlogComponent } from './pages/unconventional/blog/blog.component';
 import { CorporateCoachingComponent } from './pages/services/corporate_coaching/corporate-coaching/corporate-coaching.component';
+import { UnconventionalLandingComponent } from './pages/unconventional/unconventional-landing/unconventional-landing.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +61,8 @@ import { CorporateCoachingComponent } from './pages/services/corporate_coaching/
     ServiceComponent,
     PodcastComponent,
     BlogComponent,
-    CorporateCoachingComponent
+    CorporateCoachingComponent,
+    UnconventionalLandingComponent
   ],
   imports: [
     BrowserModule,
