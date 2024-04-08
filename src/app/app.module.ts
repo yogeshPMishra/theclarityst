@@ -27,6 +27,9 @@ import { LeadingCareerComponent } from './pages/services/projects/leading-career
 import { TalentAcquisitionComponent } from './pages/services/projects/talent-acquisition/talent-acquisition.component';
 import { ContactusComponent } from './pages/contactus/contactus.component';
 import { ServiceComponent } from './pages/services/service/service.component';
+import { PodcastComponent } from './pages/unconventional/podcast/podcast.component';
+import { BlogComponent } from './pages/unconventional/blog/blog.component';
+import { CorporateCoachingComponent } from './pages/services/corporate_coaching/corporate-coaching/corporate-coaching.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +57,10 @@ import { ServiceComponent } from './pages/services/service/service.component';
     LeadingCareerComponent,
     TalentAcquisitionComponent,
     ContactusComponent,
-    ServiceComponent
+    ServiceComponent,
+    PodcastComponent,
+    BlogComponent,
+    CorporateCoachingComponent
   ],
   imports: [
     BrowserModule,

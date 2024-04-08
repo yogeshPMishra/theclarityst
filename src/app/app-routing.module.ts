@@ -14,6 +14,9 @@ import { LeaderDigitalTransformationComponent } from './pages/services/specialis
 import { WomenLeadersComponent } from './pages/services/specialised_coaching/women-leaders/women-leaders.component';
 import { ContactusComponent } from './pages/contactus/contactus.component';
 import { ServiceComponent } from './pages/services/service/service.component';
+import { BlogComponent } from './pages/unconventional/blog/blog.component';
+import { PodcastComponent } from './pages/unconventional/podcast/podcast.component';
+import { CorporateCoachingComponent } from './pages/services/corporate_coaching/corporate-coaching/corporate-coaching.component';
 
 const routes: Routes = [
   {
@@ -37,6 +40,10 @@ const routes: Routes = [
         component : ServiceComponent,
         path:"services"
       },
+      {
+        component : CorporateCoachingComponent,
+        path : "corporate-coaching"
+       },
        {
         component : ManagerCoachingComponent,
         path : "manager-coaching"
@@ -76,6 +83,14 @@ const routes: Routes = [
        {
         component : WomenLeadersComponent,
         path :  "women-leader"
+       },
+       {
+        component : BlogComponent,
+        path:"blogs"
+       },
+       {
+        component : PodcastComponent,
+        path : "podcast"
        }
 
     ]

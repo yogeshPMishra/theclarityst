@@ -3,6 +3,7 @@ import {gsap} from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
 import { fromEvent, interval, Subscription } from 'rxjs';
 import { take } from 'rxjs/operators';
+import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -17,8 +18,13 @@ export class AppComponent {
   counter1: number = 0;
   counter2: number = 0;
   counter3: number = 0;
-  constructor() {}
+  constructor(private router: Router) {}
  ngOnInit(): void {
+  this.router.events.subscribe(event => {
+    if (event instanceof NavigationEnd) {
+      window.scrollTo(0, 0); // Scroll to the top of the page on route change
+    }
+  });
   gsap.registerPlugin(ScrollTrigger);
 
   const textElements = gsap.utils.toArray('.text');

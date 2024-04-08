@@ -4001,6 +4001,7 @@ button[type="submit"]:hover {
   }
   .sidenav-side.opn{
     width: 500px;
+    position: fixed;
   }
 
   .sidenav-side a {
@@ -4010,6 +4011,9 @@ button[type="submit"]:hover {
     color: white;
 
     transition: 0.3s;
+  }
+  .active-nav {
+    color : #ffc107 ;
   }
 
   .sidenav-side a:hover {
@@ -4065,8 +4069,7 @@ button[type="submit"]:hover {
     display: block;
     font-size: 20px;
   }
-
-  .dropdown:hover .dropdown-content {
+ .dropdown-content {
     display: block;
     background: #4e4e4e;
   }
@@ -4082,7 +4085,7 @@ button[type="submit"]:hover {
     background: #6c6c6c;
   }
 
-  .sub-dropdown:hover .sub-dropdown-content {
+  .sub-dropdown-content {
     display: block;
   }
   @media screen and (max-width: 450px) {

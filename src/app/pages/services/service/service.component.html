@@ -37,44 +37,14 @@
           quidem porro assumenda corporis expedita fuga sit quae maxime
           architecto dolorum eveniet.
         </p>
-        <button class="accordion">Corporate Coaching</button>
-        <div class="panel">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-        </div>
-
-        <button class="accordion">Specialised Coaching</button>
-        <div class="panel">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-        </div>
-
-        <button class="accordion">Micro Coaching</button>
-        <div class="panel">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-        </div>
-        <button class="accordion">Projects</button>
-        <div class="panel">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-        </div>
+        <ng-container *ngFor="let panel of panels; let i = index">
+          <button class="accordion"  (click)="togglePanel(i)">
+            {{ panel.title }}
+          </button>
+          <div class="panel" [ngClass]="{'active': activePanelIndex === i}">
+            <p>{{ panel.content }}</p>
+          </div>
+        </ng-container>
       </div>
       <div class="col-md-1"></div>
       <div class="col-md-5" style="margin-top: 200px">
