@@ -1,4 +1,4 @@
-import { Component, ElementRef, HostListener, OnInit } from '@angular/core';
+import { Component, ElementRef, HostListener, Renderer2 } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { filter } from 'rxjs/operators';
 
@@ -19,8 +19,12 @@ export class CorporateCoachingComponent {
   sections: HTMLElement[] = [];
   currentSectionId: string = '';
   progressBarWidth: string = '0%';
-
-  constructor(private router: Router, private elementRef: ElementRef) {}
+  navbar!: HTMLElement;
+  fixed_tab! : HTMLElement;
+  fixed_end! : HTMLElement;
+  sticky!: number;
+  scrollPosition: number = 0;
+  constructor( private renderer: Renderer2,private router: Router, private elementRef: ElementRef) {}
 
   togglePanel(index: number) {
     if (this.activePanelIndex === index) {
@@ -42,7 +46,17 @@ export class CorporateCoachingComponent {
     // Listen for window scroll and resize events
     window.addEventListener('scroll', () => this.updateProgress());
     window.addEventListener('resize', () => this.updateProgress());
+
+    this.navbar = this.elementRef.nativeElement.querySelector('#scroll-fixed');
+    this.fixed_tab = this.elementRef.nativeElement.querySelector('#fixed-tab');
+    this.fixed_end = this.elementRef.nativeElement.querySelector('#scroll-end');
+
+    this.sticky = this.navbar.getBoundingClientRect().top;
+
+
   }
+
+
 
   updateCurrentSection() {
     let currentSection: HTMLElement | null = null;
@@ -86,6 +100,10 @@ export class CorporateCoachingComponent {
   @HostListener('window:scroll')
   onScroll() {
     this.updateCurrentSection();
-
+    if (window.pageYOffset >= this.sticky) {
+      this.renderer.addClass(this.fixed_tab, 'sticky');
+    } else {
+      this.renderer.removeClass(this.fixed_tab, 'sticky');
+    }
   }
 }

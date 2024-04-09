@@ -4074,6 +4074,7 @@ button[type="submit"]:hover {
     background: #4e4e4e;
   }
 
+
   .sub-dropdown-content {
     display: none;
     /* position: absolute; */
@@ -4085,9 +4086,10 @@ button[type="submit"]:hover {
     background: #6c6c6c;
   }
 
-  .sub-dropdown-content {
+ .sub-dropdown-content {
     display: block;
   }
+
   @media screen and (max-width: 450px) {
     .sidenav-side {padding-top: 15px;}
     .sidenav-side a {font-size: 18px;}
