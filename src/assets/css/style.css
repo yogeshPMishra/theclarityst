@@ -3742,18 +3742,19 @@ ul.rounded li::before {
     border: none;
     text-align: left;
     outline: none;
-    font-size: 20px;
+    font-size: 15px;
     transition: 0.4s;
     border-bottom-style: solid;
     border-bottom-color: #777;
     border-bottom-width: 1px;
-    font-weight: bolder;
+    /* font-weight: bolder; */
+    margin-left: 40px;
 
   }
 
-  .active, .accordion:hover {
+  /* .active, .accordion:hover {
     color: blue;
-  }
+  } */
 
   .accordion:after {
     content: '\002B';
@@ -3773,6 +3774,7 @@ ul.rounded li::before {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+    margin-left: 40px;
   }
 .inner_page{
     background-image: url(../images/backgound_inner.png);
@@ -3848,20 +3850,7 @@ ul.rounded li::before {
   .styled-button {
     display: inline-block;
     padding: 10px 30px;
-    background-color: white;
-    color: black;
-    font-size: 20px;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    text-decoration: none;
-    text-align: center;
-    font-weight: bold;
-}
-.styled-button1 {
-    display: inline-block;
-    padding: 10px 30px;
-    background-color: rgba(8, 73, 170, 1);
+    background-color: #ce2f2f;
     color: white;
     font-size: 20px;
     border: none;
@@ -3871,10 +3860,31 @@ ul.rounded li::before {
     text-align: center;
     font-weight: bold;
 }
+.styled-button1 {
+    /* display: inline-block;
+    padding: 10px 30px;
+    background-color: #ce2f2f;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold; */
+    background-color: #E3E3E3;
+    border-radius: 100px 100px 100px 100px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0px 0px 0px 0px;
+    padding: 0em 1em 0em 1em;
+    border: none;
+}
 .styled-button2 {
     display: inline-block;
     padding: 10px 30px;
-    background-color: black;
+    background-color: #ce2f2f;
     color: white;
     font-size: 20px;
     border: none;
@@ -3994,7 +4004,8 @@ button[type="submit"]:hover {
     z-index: 99;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: white;
+    color: #000;
     overflow-x: hidden;
     transition: 0.9s;
     padding-top: 20px;
@@ -4008,7 +4019,7 @@ button[type="submit"]:hover {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: white;
+    color: black;
 
     transition: 0.3s;
   }
@@ -4016,9 +4027,9 @@ button[type="submit"]:hover {
     color : #ffc107 ;
   }
 
-  .sidenav-side a:hover {
+  /* .sidenav-side a:hover {
     color: #f1f1f1;
-  }
+  } */
 
   .sidenav-side .closebtn {
     position: absolute;
@@ -4027,9 +4038,9 @@ button[type="submit"]:hover {
     font-size: 36px;
   }
 
-  .navbar {
+  /* .navbar {
     padding-top: 50px;
-  }
+  } */
 
   .nav-list {
     list-style-type: none;
@@ -4041,11 +4052,11 @@ button[type="submit"]:hover {
 
   .nav-list li a {
     display: block;
-    color: white;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 26px;
     text-align: left;
   }
 
@@ -4063,7 +4074,7 @@ button[type="submit"]:hover {
   }
 
   .dropdown-content a {
-    color: white;
+    color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -4071,7 +4082,7 @@ button[type="submit"]:hover {
   }
  .dropdown-content {
     display: block;
-    background: #4e4e4e;
+    /* background: #4e4e4e; */
   }
 
 
@@ -4097,7 +4108,7 @@ button[type="submit"]:hover {
     .dropdown-content a, .nav-list li a{font-size: 14px;padding: 4px;}
   }
   .subnavbtn {
-    color: #fff !important;
+    color: black !important;
     cursor: pointer;
   }
   .subnavbtn i {
@@ -4140,23 +4151,23 @@ button[type="submit"]:hover {
   border: none;
   } */
 
-.blog-main .unconventional-blog .card__body {
+.blog-main .card__body {
     padding: 1rem 0;
     margin-bottom: 30px;
 }
-.blog-main  .unconventional-blog .tag {
+.blog-main  .tag {
     padding: .25em .75em;
-    border-radius: 1em;
+    /* border-radius: 1em; */
     font-size: .75rem;
     background-color: #000;
     color: white;
   }
 
-  .blog-main .unconventional-blog .card__body h4 {
+  .blog-main .card__body h4 {
     margin: 5px 0 14px;
     font-weight: 500;
 }
-.blog-main .unconventional-blog .blg-btn{
+.blog-main .blg-btn{
     color: #000;
     border-bottom: 1px solid;
     font-weight: 600;
@@ -4176,5 +4187,32 @@ button[type="submit"]:hover {
   .unconventional-blog .card__image {
     width: 100%;
     display: block;
-    height: 200px;
+    height: 250px;
   }
+
+
+  .corporate_page{
+    background-image: url('https://corporatepro.liquid-themes.com/wp-content/uploads/2021/01/bg-1@2x-1.jpg?id=4565');
+    color: white;
+    height: 400px;
+    background-repeat: no-repeat;
+background-size: cover;
+padding-bottom: 80px;
+background-position: center top;
+  }
+
+  .unconventional_banner{
+    background-image: url('https://asymmetric-agencypro.liquid-themes.com/wp-content/uploads/2020/12/agency-1@2x.jpg?id=4827');
+    color: white;
+    height: 400px;
+    background-size: cover;
+    background-position: center center;
+  }
+  .nav-list li .sub_menu_font a{
+    font-size: 20px;
+}
+
+.get_nav{
+   
+    margin: 70px;
+}

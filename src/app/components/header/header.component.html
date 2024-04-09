@@ -3,13 +3,6 @@
   <div class="row no-gutters" style="box-shadow: 0 22px 50px 0 rgba(0,0,0,.15);padding: 5px 0;">
     <div class="col-4 col-lg-4 d-flex" style="padding-left: 20px;
     padding-top: 4px;">
-      <!-- <a class="menu_bars menu-bars-setting sidemenu_toggle link mr-3 mr-lg-0">
-        <div class="menu-lines">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </a> -->
       <span style="font-size:30px;cursor:pointer" (click)="openNav1()">&#9776; </span>
     </div>
     <div class="col-4 col-lg-4 d-flex align-items-center justify-content-end justify-content-lg-center">
@@ -26,12 +19,90 @@
 <header>
 <div class="sidenav-side " [ngClass]="{'opn':isNavOpen}" >
   <a href="javascript:void(0)" class="closebtn" (click)="closeNav1($event)">&times;</a>
-  <div class="sidebar-logo">
+  <!-- <div class="sidebar-logo">
     <a class="logo" href="javascript:void(0)">
       <img src="assets/images/logo-mini.png" class="logo-default" alt="logo" title="Logo">
     </a>
+  </div> -->
+  <div style="margin-top: 80px;">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-3">
+      <h6 style="color: rgb(180, 178, 178);">Social</h6>
+      <ul>
+        <li>Facebook</li>
+        <li>Behance</li>
+        <li>Dribble</li>
+        <li>Instagram</li>
+        <li>Youtube</li>
+      </ul>
+    </div>
+    <div class="col-md-7">
+      <h6 style="margin-left: 35px;color: rgb(180, 178, 178)">Menu</h6>
+      <nav class="navbar" (click)="stopPropagation($event)">
+        <ul class="nav-list">
+          <li><a routerLink="/home" (click)="closeNav1($event)" [ngClass]="{'active-nav':this.currentUrl == '/home'}">Home</a></li>
+          <li class="dropdown" (click)="submenuOpen1()">
+            <a class="subnavbtn" routerLink="services">Services<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+            <ul class="dropdown-content" *ngIf="isMenuOpen">
+              <li class="sub_menu_font"><a routerLink="/corporate-coaching" (click)="closeNav1($event)">Corporate Coaching</a></li>
+                  <li class="sub_menu_font"><a routerLink="#" (click)="closeNav1($event)">Specialised Coaching</a></li>
+                  <li class="sub_menu_font"><a routerLink="#">Micro Coaching</a></li>
+                  <li class="sub_menu_font"><a routerLink="#">Projects</a></li>
+            </ul>
+          </li>
+          <!-- <li class="dropdown"  (click)="submenuOpen1()">
+            <a class="subnavbtn" routerLink="services">Services<i class="fa fa-caret-down"></i></a>
+            <ul class="dropdown-content dropdown-contentone" *ngIf="isMenuOpen">
+              <li class="sub-dropdown" (click)="innerMenuOpen1($event)">
+                <a class="subnavbtn" routerLink="/corporate-coaching" >Corporate Coaching<i class="fa fa-caret-down"></i></a>
+                <ul class="sub-dropdown-content" *ngIf="isSubmenuOpen">
+                  <li><a href="#">Manager Coaching</a></li>
+                  <li><a href="#">Sales Coaching</a></li>
+                  <li><a href="#">Performance Coaching</a></li>
+                  <li><a href="#">Team Coaching</a></li>
+                </ul>
+              </li>
+              <li class="sub-dropdown" (click)="innerMenuOpen2($event)">
+                <a class="subnavbtn">Specialised Coaching<i class="fa fa-caret-down"></i></a>
+                <ul class="sub-dropdown-content" *ngIf="isSubmenuOpen1">
+                  <li><a href="#">For leaders in digital transformation</a></li>
+                  <li><a href="#">For women leaders and professionals</a></li>
+                  <li><a href="#">For entrepreneurs</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Micro Coaching</a></li>
+              <li class="sub-dropdown" (click)="innerMenuOpen3($event)">
+                <a class="subnavbtn">Projects<i class="fa fa-caret-down"></i></a>
+                <ul class="sub-dropdown-content" *ngIf="isSubmenuOpen2">
+                  <li><a href="#">Leading career pivots and transitions</a></li>
+                  <li><a href="#">Talent acquisition through a culture lens</a></li>
+                  <li><a href="#">For entrepreneurs</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li> -->
+          <li class="dropdown" (click)="submenuOpen2()">
+            <a class="subnavbtn" routerLink="/unconventional">Unconventional<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+            <ul class="dropdown-content" *ngIf="isMenuOpen1">
+              <li class="sub_menu_font"><a routerLink="/podcast" (click)="closeNav1($event)">Podcast</a></li>
+                  <li class="sub_menu_font"><a routerLink="/blogs" (click)="closeNav1($event)">Blog</a></li>
+                  <li class="sub_menu_font"><a routerLink="#">Whitepapers</a></li>
+            </ul>
+          </li>
+          <li><a routerLink="" (click)="closeNav1($event)" [ngClass]="{'active-nav':this.currentUrl == '/home'}">Contact Us</a></li>
+        </ul>
+      </nav> 
+    </div>
+    <!-- <div class="col-md-1"></div> -->
+
   </div>
-  <nav class="navbar" (click)="stopPropagation($event)">
+</div>
+<div class="get_nav">
+  <h6 style="color: rgb(180, 178, 178);">Get in touch</h6>
+  <h5>info@clarityst.com</h5>
+</div>
+ <!-- <nav class="navbar" (click)="stopPropagation($event)">
     <ul class="nav-list">
       <li><a routerLink="/home" (click)="closeNav1($event)" [ngClass]="{'active-nav':this.currentUrl == '/home'}">Home</a></li>
       <li class="dropdown"  (click)="submenuOpen1()">
@@ -74,8 +145,8 @@
         </ul>
       </li>
     </ul>
-  </nav>
-  <div class="ftr-sidebar">
+  </nav>  -->
+  <!-- <div class="ftr-sidebar">
     <div class="slider-icons">
       <ul class="slider-social banner-social">
         <li><a href="javascript:void(0);"><i class="fab fa-facebook-f"></i> </a></li>
@@ -84,6 +155,6 @@
         <li><a href="javascript:void(0);"><i class="fab fa-instagram"></i> </a></li>
       </ul>
     </div>
-  </div>
+  </div>  -->
 </div>
 </header>
