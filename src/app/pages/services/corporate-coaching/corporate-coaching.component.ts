@@ -1,13 +1,14 @@
 import { Component, ElementRef, HostListener, Renderer2 } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { filter } from 'rxjs/operators';
+
 @Component({
-  selector: 'app-micro-coaching',
-  templateUrl: './micro-coaching.component.html',
-  styleUrls: ['./micro-coaching.component.scss']
+  selector: 'app-corporate-coaching',
+  templateUrl: './corporate-coaching.component.html',
+  styleUrls: ['./corporate-coaching.component.scss']
 })
-export class MicroCoachingComponent {
-    panels = [
+export class CorporateCoachingComponent {
+  panels = [
     { title: 'Section 1', content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' },
     { title: 'Section 2', content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' },
     { title: 'Section 3', content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' },
@@ -106,7 +107,6 @@ export class MicroCoachingComponent {
     }
     this.checkScrollEnd();
   }
-
   checkScrollEnd() {
     var scrollPosition = window.pageYOffset;
     var scrollHeight = this.navbar.offsetTop + this.navbar.clientHeight;

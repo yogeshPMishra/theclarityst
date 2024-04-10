@@ -6,7 +6,7 @@
       <span style="font-size:30px;cursor:pointer" (click)="openNav1()">&#9776; </span>
     </div>
     <div class="col-4 col-lg-4 d-flex align-items-center justify-content-end justify-content-lg-center">
-      <a class="logo" href="/">
+      <a class="logo" routerLink="/home">
         <img src="assets/images/logo-mini-dark.png" class="logo-default" alt="logo" title="Logo">
       </a>
     </div>
@@ -26,7 +26,7 @@
   </div> -->
   <div style="margin-top: 80px;">
   <div class="row">
-    <div class="col-md-2"></div>
+    <!-- <div class="col-md-2"></div>
     <div class="col-md-3">
       <h6 style="color: rgb(180, 178, 178);">Social</h6>
       <ul>
@@ -36,19 +36,19 @@
         <li>Instagram</li>
         <li>Youtube</li>
       </ul>
-    </div>
-    <div class="col-md-7">
+    </div> -->
+    <div class="col-md-12 mx-5">
       <h6 style="margin-left: 35px;color: rgb(180, 178, 178)">Menu</h6>
-      <nav class="navbar" (click)="stopPropagation($event)">
+      <nav class="navbar">
         <ul class="nav-list">
-          <li><a routerLink="/home" (click)="closeNav1($event)" [ngClass]="{'active-nav':this.currentUrl == '/home'}">Home</a></li>
+          <li><a routerLink="/home" (click)="closeNav()" [ngClass]="{'active-nav':this.currentUrl == '/home'}">Home</a></li>
           <li class="dropdown" (click)="submenuOpen1()">
-            <a class="subnavbtn" routerLink="services">Services<i class="fa fa-angle-down" aria-hidden="true"></i></a>
-            <ul class="dropdown-content" *ngIf="isMenuOpen">
-              <li class="sub_menu_font"><a routerLink="/corporate-coaching" (click)="closeNav1($event)">Corporate Coaching</a></li>
-                  <li class="sub_menu_font"><a routerLink="#" (click)="closeNav1($event)">Specialised Coaching</a></li>
-                  <li class="sub_menu_font"><a routerLink="#">Micro Coaching</a></li>
-                  <li class="sub_menu_font"><a routerLink="#">Projects</a></li>
+            <a class="subnavbtn" routerLink="services" (click)="closeNav()">Services<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+            <ul class="dropdown-content" [ngClass]=" isMenuOpen ? 'sidenav_sub_open':'sidenav_sub_close'">
+              <li class="sub_menu_font"><a routerLink="/corporate-coaching" (click)="closeNav()">Corporate Coaching</a></li>
+                  <li class="sub_menu_font"><a routerLink="/specialised-coaching" (click)="closeNav()">Specialised Coaching</a></li>
+                  <li class="sub_menu_font"><a routerLink="/micro-coaching" (click)="closeNav()">Micro Coaching</a></li>
+                  <li class="sub_menu_font"><a routerLink="/projects" (click)="closeNav()">Projects</a></li>
             </ul>
           </li>
           <!-- <li class="dropdown"  (click)="submenuOpen1()">
@@ -83,16 +83,16 @@
             </ul>
           </li> -->
           <li class="dropdown" (click)="submenuOpen2()">
-            <a class="subnavbtn" routerLink="/unconventional">Unconventional<i class="fa fa-angle-down" aria-hidden="true"></i></a>
-            <ul class="dropdown-content" *ngIf="isMenuOpen1">
-              <li class="sub_menu_font"><a routerLink="/podcast" (click)="closeNav1($event)">Podcast</a></li>
-                  <li class="sub_menu_font"><a routerLink="/blogs" (click)="closeNav1($event)">Blog</a></li>
+            <a class="subnavbtn" routerLink="/unconventional" (click)="closeNav()">Unconventional<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+            <ul class="dropdown-content"  [ngClass]=" isMenuOpen1 ? 'sidenav_sub_open':'sidenav_sub_close'">
+              <li class="sub_menu_font"><a routerLink="/podcast" (click)="closeNav()">Podcast</a></li>
+                  <li class="sub_menu_font"><a routerLink="/blogs" (click)="closeNav()">Blog</a></li>
                   <li class="sub_menu_font"><a routerLink="#">Whitepapers</a></li>
             </ul>
           </li>
-          <li><a routerLink="" (click)="closeNav1($event)" [ngClass]="{'active-nav':this.currentUrl == '/home'}">Contact Us</a></li>
+          <li><a routerLink="/contact-us" (click)="closeNav()" [ngClass]="{'active-nav':this.currentUrl == '/home'}">Contact Us</a></li>
         </ul>
-      </nav> 
+      </nav>
     </div>
     <!-- <div class="col-md-1"></div> -->
 

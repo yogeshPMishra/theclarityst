@@ -36,7 +36,7 @@
           Hub IT allows your business and technology computers to store, transmit, analyze, and manipulate big data in the digital world.
         </p>
         <ng-container *ngFor="let panel of panels; let i = index">
-          <button class="accordion"  (click)="togglePanel(i)">
+          <button class="accordion dropdown-toggle-icon"  (click)="togglePanel(i)">
             {{ panel.title }}
           </button>
           <div class="panel" [ngClass]="{'active': activePanelIndex === i}">
@@ -49,7 +49,7 @@
         <img src="https://asymmetric-businesspro.liquid-themes.com/wp-content/uploads/2020/11/img-3@2x.jpg" style="height: 600px; width: 1000px;" />
       </div>
     </div>
-  
+
 </section>
 <section>
   <div class="container">

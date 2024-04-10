@@ -9,9 +9,6 @@ import { Router } from '@angular/router';
 export class HeaderComponent {
   isMenuOpen = false;
   isMenuOpen1 = false;
-  isSubmenuOpen = false;
-  isSubmenuOpen1 = false;
-  isSubmenuOpen2 = false;
   isNavOpen = false;
   rotateArrow: string = "";
   currentUrl :string= "";
@@ -38,34 +35,13 @@ export class HeaderComponent {
       this.isMenuOpen = false;
     }
   }
-  innerMenuOpen1(event: Event){
-    this.isSubmenuOpen = !this.isSubmenuOpen;
-    console.log(this.isSubmenuOpen);
-    if(this.isSubmenuOpen){
-      this.isSubmenuOpen1= false;
-      this.isSubmenuOpen2 = false;
-    }
-    event.stopPropagation();
-  }
-  innerMenuOpen2(event: Event){
-    this.isSubmenuOpen1 = !this.isSubmenuOpen1;
-    if(this.isSubmenuOpen1){
-      this.isSubmenuOpen= false;
-      this.isSubmenuOpen2 = false;
-    }
-    event.stopPropagation();
-  }
-  innerMenuOpen3(event: Event){
-    this.isSubmenuOpen2 = !this.isSubmenuOpen2;
-    if(this.isSubmenuOpen2){
-      this.isSubmenuOpen= false;
-      this.isSubmenuOpen1 = false;
-    }
-    event.stopPropagation();
-  }
+
 
   openNav1(){
       this.isNavOpen = true;
+  }
+  closeNav(){
+    this.isNavOpen= false;
   }
   closeNav1(event: Event){
     this.isNavOpen= false;

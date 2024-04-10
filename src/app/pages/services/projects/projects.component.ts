@@ -3,11 +3,11 @@ import { NavigationEnd, Router } from '@angular/router';
 import { filter } from 'rxjs/operators';
 
 @Component({
-  selector: 'app-corporate-coaching',
-  templateUrl: './corporate-coaching.component.html',
-  styleUrls: ['./corporate-coaching.component.scss']
+  selector: 'app-projects',
+  templateUrl: './projects.component.html',
+  styleUrls: ['./projects.component.scss']
 })
-export class CorporateCoachingComponent {
+export class ProjectsComponent {
   panels = [
     { title: 'Section 1', content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' },
     { title: 'Section 2', content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' },
@@ -103,6 +103,16 @@ export class CorporateCoachingComponent {
     if (window.pageYOffset >= this.sticky) {
       this.renderer.addClass(this.fixed_tab, 'sticky');
     } else {
+      this.renderer.removeClass(this.fixed_tab, 'sticky');
+    }
+    this.checkScrollEnd();
+  }
+
+  checkScrollEnd() {
+    var scrollPosition = window.pageYOffset;
+    var scrollHeight = this.navbar.offsetTop + this.navbar.clientHeight;
+
+    if (scrollPosition >= scrollHeight) {
       this.renderer.removeClass(this.fixed_tab, 'sticky');
     }
   }

@@ -1444,7 +1444,7 @@ header.header-appear .navbar-top-default .header-social a:hover {
 }
 .abtimg2 {
     inset-inline-start: 25%;
-    top: 45%;
+    top: 31%;
 }
 .abtimg3 img{
     width: 222px;
@@ -3756,7 +3756,7 @@ ul.rounded li::before {
     color: blue;
   } */
 
-  .accordion:after {
+  .dropdown-toggle-icon:after {
     content: '\002B';
     color: black;
     font-weight: bold;
@@ -4080,10 +4080,17 @@ button[type="submit"]:hover {
     display: block;
     font-size: 20px;
   }
- .dropdown-content {
+  .dropdown:hover .dropdown-content {
     display: block;
-    /* background: #4e4e4e; */
   }
+
+  .sidenav_sub_open {
+    display: block;
+  }
+  .sidenav_sub_close{
+    display: none;
+  }
+
 
 
   .sub-dropdown-content {
@@ -4095,9 +4102,10 @@ button[type="submit"]:hover {
     min-width: 160px;
     z-index: 1;
     background: #6c6c6c;
+
   }
 
- .sub-dropdown-content {
+ .sub-dropdown:hover .sub-dropdown-content {
     display: block;
   }
 
@@ -4213,6 +4221,6 @@ background-position: center top;
 }
 
 .get_nav{
-   
+
     margin: 70px;
 }

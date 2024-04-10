@@ -2,12 +2,12 @@ import { Component, ElementRef, HostListener, Renderer2 } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { filter } from 'rxjs/operators';
 @Component({
-  selector: 'app-micro-coaching',
-  templateUrl: './micro-coaching.component.html',
-  styleUrls: ['./micro-coaching.component.scss']
+  selector: 'app-specialised-coaching',
+  templateUrl: './specialised-coaching.component.html',
+  styleUrls: ['./specialised-coaching.component.scss']
 })
-export class MicroCoachingComponent {
-    panels = [
+export class SpecialisedCoachingComponent {
+  panels = [
     { title: 'Section 1', content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' },
     { title: 'Section 2', content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' },
     { title: 'Section 3', content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' },
@@ -27,6 +27,7 @@ export class MicroCoachingComponent {
 
   togglePanel(index: number) {
     if (this.activePanelIndex === index) {
+      console.log(index, this.activePanelIndex);
       this.activePanelIndex = null; // Close the panel if it's already open
     } else {
       this.activePanelIndex = index; // Open the clicked panel
@@ -48,7 +49,6 @@ export class MicroCoachingComponent {
 
     this.navbar = this.elementRef.nativeElement.querySelector('#scroll-fixed');
     this.fixed_tab = this.elementRef.nativeElement.querySelector('#fixed-tab');
-    this.fixed_end = this.elementRef.nativeElement.querySelector('#scroll-end');
 
     this.sticky = this.navbar.getBoundingClientRect().top;
 
@@ -67,7 +67,6 @@ export class MicroCoachingComponent {
 
       if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
         currentSection = section;
-        console.log(currentSection);
         break;
       }
     }
@@ -103,10 +102,11 @@ export class MicroCoachingComponent {
       this.renderer.addClass(this.fixed_tab, 'sticky');
     } else {
       this.renderer.removeClass(this.fixed_tab, 'sticky');
+      // this.renderer.addClass(this.fixed_tab, 'remove-sticky');
     }
     this.checkScrollEnd();
-  }
 
+  }
   checkScrollEnd() {
     var scrollPosition = window.pageYOffset;
     var scrollHeight = this.navbar.offsetTop + this.navbar.clientHeight;

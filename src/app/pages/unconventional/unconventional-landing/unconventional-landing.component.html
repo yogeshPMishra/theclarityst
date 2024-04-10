@@ -1,6 +1,6 @@
 <section class="unconventional_banner">
     <div class="container">
-      
+
           <div class="Unconventional_section">
           <h1 style="font-weight: 700;color: rgb(255, 255, 255);font-size: 100px;text-align: center;">Unconventional</h1>
           <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore adipisci temporibus
@@ -41,7 +41,7 @@
     <section class="inner_page" style="border-bottom-style: none;">
         <div class="container" style="border-bottom-style: solid;
         border-bottom-color: #777;
-        border-bottom-width: 1px;height: 400px;">
+        border-bottom-width: 1px; padding-bottom: 70px;">
           <div class="row">
             <div class="col-md-6">
               <h1>IT Business Solution tect effect</h1>
@@ -54,20 +54,20 @@
             <div class="col-md-2"></div>
             <div class="col-md-4">
               <ng-container *ngFor="let panel of panels; let i = index">
-                <button class="accordion"  (click)="togglePanel(i)">
+                <button class="accordion dropdown-toggle-icon"  (click)="togglePanel(i)">
                   {{ panel.title }}
                 </button>
                 <div class="panel" [ngClass]="{'active': activePanelIndex === i}">
                   <p>{{ panel.content }}</p>
                 </div>
               </ng-container>
-      
+
             </div>
-      
+
           </div>
-      
+
         </div>
-      
+
       </section>
       <section class="unconventional-blog">
         <div class="container">
@@ -78,7 +78,7 @@
                           <img src="https://img.freepik.com/free-photo/technology-communication-icons-symbols-concept_53876-120314.jpg?w=740" alt="card__image" class="card__image">
                         </div>
                         <div class="card__body">
-                            
+
                           <h4 class="blog_head">Blogs</h4>
                           <p class="blog_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p>
                           <a href="#" class="blg-btn">View All</a>
@@ -91,7 +91,7 @@
                           <img src="https://img.freepik.com/free-photo/smiley-woman-broadcasting-radio-with-microphone_23-2148808752.jpg?w=740" alt="card__image" class="card__image">
                         </div>
                         <div class="card__body">
-                            
+
                           <h4 class="blog_head">Podcast</h4>
                           <p class="blog_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p>
                           <a href="#" class="blg-btn">View All</a>
@@ -104,7 +104,7 @@
                           <img src="https://img.freepik.com/premium-photo/young-businessman-holding-looking-document-paper_44344-19.jpg?w=826" alt="card__image" class="card__image">
                         </div>
                         <div class="card__body">
-                            
+
                           <h4 class="blog_head">Whitepapers</h4>
                           <p class="blog_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p>
                           <a href="#" class="blg-btn">View All</a>
