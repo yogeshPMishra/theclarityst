@@ -4216,3 +4216,104 @@ background-position: center top;
    
     margin: 70px;
 }
+
+/* contact Us */
+
+.contact_section_bg{
+    background: black;
+    color: white;
+    height: 400px;
+}
+.contact_heading{
+    text-align: center;
+}
+.section_contact .row{
+    padding-top: 75px;
+}
+
+.section_contact .img{
+    height: 400px;
+    width: 700px;
+}
+.section_contact .contact_map{
+    padding-top: 30px;
+}
+.contact_address{
+    background: linear-gradient(to bottom, white 50%, rgba(8, 73, 170, 1) 50%);
+    height: 250px;
+    margin-top: 60px;
+}
+.Card_sub_1{
+    padding-left: 34%;
+    z-index: 2;
+    position: absolute;
+    top: -40px;
+}
+.sub_section .container{
+    text-align: center;
+    position: relative;
+}
+ .head_h4{
+    padding-top: 40px;
+    font-weight: bold;
+}
+.sub_section .para_p{
+    font-size: 10px;
+    color: rgba(158, 156, 156, 1);
+    text-align: left;
+    line-height: 1.5;
+    padding-left: 92px;
+}
+.Card_sub_1 img{
+    height: 80px;
+}
+.para_p1 {
+    font-size: 10px;
+    color: rgba(158, 156, 156, 1);
+    text-align: left;
+    line-height: 1.5;
+    padding-left: 77px;
+}
+.para_p2{
+    font-size: 10px;
+    color: rgba(158, 156, 156, 1);
+    text-align: left;
+    line-height: 1.5;
+    padding-left: 83px;
+}
+/* service */
+.service_bg{
+    background: #9A1F1F; 
+    color: white; 
+    height: 400px
+}
+.service_page .row{
+    border-bottom: 1px solid black;
+}
+.sercive_h5{
+    font-weight: 600;
+}
+.styled-button1{
+    margin-top: 60px;
+    margin-left: 50px;
+}
+.head_h2{
+    font-size: 50px;
+    line-height: 1.1em;
+    margin-left: 50px;
+    color: #1C2226
+}
+.para_section{
+    margin-left: 50px;
+}
+.service_desc{
+    background-color: #9A1F1F;
+    margin-top: 60px;
+    height: 250px;
+}
+.sec_serv_1{
+    padding-top: 50px
+}
+.service_sec .sec_serv_1 .styled-button1{
+    margin: 50px 0 0 50px
+}
