@@ -27,23 +27,40 @@
           <div class="text_card">
             <h4><b>Get In Touch With Us</b></h4>
             <p>If you have any question, Please don’t hesitate to send us a message</p>
-            <form action="#" method="post" style="padding-top: 30px;">
-              <div class="form-group1">
-                <input type="text" id="name" name="name" placeholder="Name" required>
+            <form style="padding-top: 30px;" [formGroup]="contactForm" (ngSubmit)="onSubmit($event)">
+              <div class="form-group1 input-wrapper">
+                <input type="text" id="name" name="name" placeholder="Name" formControlName="name">
+                <div class="error-msg" *ngIf="contactForm.controls.name.invalid && (contactForm.controls.name.dirty || contactForm.controls.name.touched)">
+                     <div *ngIf="contactForm.controls.name.errors?.['required']"> Name Is required</div>
+                </div>
               </div>
-              <div class="form-group1">
-                <input type="email" id="email" name="email" placeholder="Email" required>
+              <div class="form-group1 input-wrapper">
+                <input type="email" id="email" name="email" placeholder="Email" formControlName="email">
+                <div class="error-msg" *ngIf="contactForm.controls.email.invalid && (contactForm.controls.email.dirty || contactForm.controls.email.touched)">
+                  <div *ngIf="contactForm.controls.email.errors?.['required']"> Email Is required</div>
+                  <div *ngIf="contactForm.controls.email.errors?.['email']">Invalid Email</div>
+               </div>
               </div>
-              <div class="form-group1">
-                <input type="tel" id="phone" name="phone" placeholder="Phone No" required>
+              <div class="form-group1 input-wrapper">
+                <input type="text" id="phone" name="phone" placeholder="Phone No" maxlength="10" minlength="10" formControlName="phone" (keypress)="validateOnlyNum($event)">
+                <div class="error-msg" *ngIf="contactForm.controls.phone.invalid && (contactForm.controls.phone.dirty || contactForm.controls.phone.touched)">
+                  <div *ngIf="contactForm.controls.phone.errors?.['required']"> Phone No. Is required</div>
+                  <div *ngIf="contactForm.controls.phone.errors?.['minlength']"> Minimum number 10</div>
+               </div>
               </div>
-              <div class="form-group1">
-                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+              <div class="form-group1 input-wrapper">
+                <input type="text" id="subject" name="subject" placeholder="Subject" formControlName="subject">
+                <div class="error-msg" *ngIf="contactForm.controls.subject.invalid && (contactForm.controls.subject.dirty || contactForm.controls.subject.touched)">
+                  <div *ngIf="contactForm.controls.subject.errors?.['required']"> Subject Is required</div>
+               </div>
               </div>
-              <div class="form-group1">
-                <textarea id="message" name="message" placeholder="Message" required></textarea>
+              <div class="form-group1 input-wrapper">
+                <textarea id="message" name="message" placeholder="Message" formControlName="message"></textarea>
+                <div class="error-msg" *ngIf="contactForm.controls.message.invalid && (contactForm.controls.message.dirty || contactForm.controls.message.touched)">
+                  <div *ngIf="contactForm.controls.message.errors?.['required']"> Message Is required</div>
+               </div>
               </div>
-              <button type="submit">Submit</button>
+              <button type="submit" >Submit</button>
             </form>
           </div>
         </div>

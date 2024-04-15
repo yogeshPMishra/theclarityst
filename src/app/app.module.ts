@@ -24,6 +24,7 @@ import { CorporateCoachingComponent } from './pages/services/corporate-coaching/
 import { UnconventionalLandingComponent } from './pages/unconventional/unconventional-landing/unconventional-landing.component';
 import { SpecialisedCoachingComponent } from './pages/services/specialised-coaching/specialised-coaching.component';
 import { ProjectsComponent } from './pages/services/projects/projects.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -54,7 +55,8 @@ import { ProjectsComponent } from './pages/services/projects/projects.component'
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

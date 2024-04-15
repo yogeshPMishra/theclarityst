@@ -27,18 +27,25 @@
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12 p-0 col-map box-shadow-map">
             <div class="cntfrm">
-              <form action="">
+              <form  [formGroup]="contactForm" (ngSubmit)="onSubmit($event)">
                   <div class="form-group">
-                      <input type="text" class="form-control" name="name" placeholder="Name" required />
+                      <input type="text" class="form-control" name="name" placeholder="Name"  formControlName="name"/>
+                      <div class="error-msg" *ngIf="contactForm.controls.name.invalid && (contactForm.controls.name.dirty || contactForm.controls.name.touched)">
+                        <div *ngIf="contactForm.controls.name.errors?.['required']"> Name Is required</div>
+                      </div>
                   </div>
                   <div class="form-group">
-                      <input type="email" class="form-control" name="email" placeholder="Email" required/>
+                      <input type="email" class="form-control" name="email" placeholder="Email" formControlName="email"/>
+                      <div class="error-msg" *ngIf="contactForm.controls.email.invalid && (contactForm.controls.email.dirty || contactForm.controls.email.touched)">
+                        <div *ngIf="contactForm.controls.email.errors?.['required']"> Email Is required</div>
+                        <div *ngIf="contactForm.controls.email.errors?.['email']">Invalid Email</div>
+                     </div>
                   </div>
                   <div class="form-group">
                       <textarea class="form-control" rows="4" cols="50" name="message" placeholder="Message"></textarea>
                   </div>
                   <div class="form-group">
-                      <button type="submit" value="Submit" class="sbt">Send Message</button>
+                      <button type="submit" value="Submit" class="sbt" [disabled]="contactForm.invalid">Send Message</button>
                   </div>
               </form>
             </div>

@@ -1,0 +1,12 @@
+.error-msg{
+  color: #ba0000;
+}
+.error-msg > div{
+  margin-left: 10px;
+}
+.input-wrapper{
+  margin-bottom: 20px;
+}
+#name, #email, #phone, #subject, #message{
+  margin-bottom: 0px;
+}

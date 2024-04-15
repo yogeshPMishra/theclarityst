@@ -1,0 +1,24 @@
+
+.newsletter-form {
+  border: 1px solid #fff;
+}
+
+
+.newsletter-form > input[type="email"] {
+  padding-left: 10px;
+}
+
+
+.newsletter-form > .ftsbt {
+
+  background-color: #fff;
+  padding: 0px 10px;
+  color: black;
+  font-weight: bolder;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.newsletter-form > .ftsbt:hover {
+  background-color: #fff700;
+}
