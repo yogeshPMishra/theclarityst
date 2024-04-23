@@ -1,20 +1,54 @@
 <!-- Header start -->
 <section class="top-header" id="sticky-nav">
-  <div class="row no-gutters" style="box-shadow: 0 22px 50px 0 rgba(0,0,0,.15);padding: 5px 0;" >
-    <div class="col-4 col-lg-4 d-flex" style="padding-left: 20px;
-    padding-top: 4px;">
-      <span style="font-size:30px;cursor:pointer" (click)="openNav1()">&#9776; </span>
-    </div>
+  <div class="row no-gutters" style="box-shadow: 0 22px 50px 0 rgba(0,0,0,.15);" >
     <div class="col-4 col-lg-4 d-flex align-items-center justify-content-end justify-content-lg-center">
       <a class="logo" routerLink="/home">
         <img src="assets/images/logo-mini-dark.png" class="logo-default" alt="logo" title="Logo">
       </a>
+    </div>
+    <div class="col-4 col-lg-4 d-flex">
+      <!-- <span style="font-size:30px;cursor:pointer" (click)="openNav1()">&#9776; </span> -->
+      <div class="navbar_header">
+        <ul class="list">
+          <li><a href="#">Home</a>
+          </li>
+          <li>
+            <div class="dropdown">
+            <button class="dropbtn">Services
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Corporate Coaching</a>
+              <a href="#">Specialised Coaching</a>
+              <a href="#">Micro Coaching</a>
+              <a href="#">Projects</a>
+            </div>
+          </div>
+          </li>
+          <li>
+            <div class="dropdown">
+              <button class="dropbtn">Unconventional
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">Podcast</a>
+                <a href="#">Blog</a>
+                <a href="#">Whitepapers</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+     
     </div>
     <div class="col-4 d-flex justify-content-end">
       <a href="javascript:void(0)"
         class="btn-setting link btn-hvr-up btn-hvr-whatsapp color-black mr-lg-4 d-none d-lg-inline-block"><b> CONTACT</b></a>
     </div>
   </div>
+  
+  
 </section>
 <header>
 <div class="sidenav-side " [ngClass]="{'opn':isNavOpen}" >
@@ -158,3 +192,25 @@
   </div>  -->
 </div>
 </header>
+
+
+
+<!-- <a id="button_scroll"></a> -->
+<div class="lqd-stickybar-wrap lqd-stickybar-right items-center justify-center">
+  <div>
+    <ul>
+      <li><i class="fab fa-facebook-f"></i></li>
+      <li><i class="fab fa-twitter"></i></li>
+      <li><i class="fab fa-linkedin-in"></i></li>
+      <li><i class="fab fa-instagram"></i></li>
+      </ul>
+      </div>
+  
+      <div class="-rotate-180 vertical-lr">
+        <a href="#" class="button1 text-black text-14">Contact Us</a>
+      </div>
+      <div class="-rotate-180 vertical-lr">
+        <a href="#" class="button1 text-black text-14">Membership</a>
+      </div>
+</div>
+<!-- <i class="fas fa-user"></i> -->
