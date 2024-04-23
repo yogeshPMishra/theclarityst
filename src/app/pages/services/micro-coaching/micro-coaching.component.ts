@@ -50,7 +50,7 @@ export class MicroCoachingComponent {
     this.fixed_tab = this.elementRef.nativeElement.querySelector('#fixed-tab');
     this.fixed_end = this.elementRef.nativeElement.querySelector('#scroll-end');
 
-    this.sticky = this.navbar.getBoundingClientRect().top;
+    this.sticky = this.navbar.getBoundingClientRect().top +  window.pageYOffset;
 
 
   }
@@ -64,10 +64,8 @@ export class MicroCoachingComponent {
     for (const section of this.sections) {
 
       const rect = section.getBoundingClientRect();
-
       if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
         currentSection = section;
-        console.log(currentSection);
         break;
       }
     }
@@ -108,9 +106,10 @@ export class MicroCoachingComponent {
   }
 
   checkScrollEnd() {
+    console.log( window.pageYOffset);
     var scrollPosition = window.pageYOffset;
     var scrollHeight = this.navbar.offsetTop + this.navbar.clientHeight;
-
+    console.log( scrollHeight);
     if (scrollPosition >= scrollHeight) {
       this.renderer.removeClass(this.fixed_tab, 'sticky');
     }

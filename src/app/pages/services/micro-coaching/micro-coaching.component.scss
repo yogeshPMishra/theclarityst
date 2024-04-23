@@ -2,16 +2,30 @@
   max-height: 200px;
 }
 .tab-active{
-  border-bottom: 5px solid #ce2424;
+  color: rgba(6, 14, 98, 1);
+  border-bottom: 2px solid rgb(101 161 195);
+  background-color: #04285e;
+  color: #fff !important;
+  border-radius: 35px;
 }
 .sticky {
   position: fixed;
-  top: 0;
+  top:80px;
   width: 100%;
   z-index: 99;
+  background-color: #fff;
+  padding: 20px 0px;
 }
 .link_tab{
-  font-size: 16px;
+  font-size: 18px;
     line-height: 1.75em;
     color: rgba(15, 33, 55, .55);
+}
+.link_tab:hover {
+  color: rgba(6, 14, 98, 1);
+  border-bottom: 2px solid rgb(101 161 195);
+  background-color: #04285e;
+  color: #fff !important;
+  border-radius: 35px;
+  cursor: pointer;
 }

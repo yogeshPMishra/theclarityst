@@ -51,7 +51,7 @@ export class ProjectsComponent {
     this.fixed_tab = this.elementRef.nativeElement.querySelector('#fixed-tab');
     this.fixed_end = this.elementRef.nativeElement.querySelector('#scroll-end');
 
-    this.sticky = this.navbar.getBoundingClientRect().top;
+    this.sticky = this.navbar.getBoundingClientRect().top +  window.pageYOffset;
 
 
   }

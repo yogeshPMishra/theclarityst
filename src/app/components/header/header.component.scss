@@ -1,0 +1,9 @@
+.sticky{
+  padding: 20px 75px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 98;
+  background-color: #FFF;
+  transition: all 0.4s ease-in-out;
+}

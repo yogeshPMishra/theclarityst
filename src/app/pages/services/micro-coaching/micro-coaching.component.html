@@ -60,13 +60,16 @@
 </section>
 <section id="scroll-fixed">
 <div class="sec-fixed" id="fixed-tab">
-  <div class="container" style="padding-bottom: 3px; background-color: #fff;padding-top: 10px;">
+  <div class="container" style="padding: 14px 0px;
+  background-color: #e7eaee;
+  text-align: center;
+  border-radius: 30px;">
     <div class="row">
-      <div class="col-md-3"><a class="link_tab" (click)="scrollToSection('Manager_Coaching')"  [ngClass]="{'tab-active':currentSectionId === 'Manager_Coaching'}"> Manager Coaching</a></div>
-      <div class="col-md-3"><a  class="link_tab" (click)="scrollToSection('Sales_Coaching')" [ngClass]="{'tab-active': currentSectionId === 'Sales_Coaching'}">Sales Coaching</a></div>
-      <div class="col-md-3"><a class="link_tab" (click)="scrollToSection('Performance_Coaching')" [ngClass]="{'tab-active':currentSectionId === 'Performance_Coaching'}">Performance Coaching</a>
+      <div class="col-md-3"><a class="link_tab" (click)="scrollToSection('Manager_Coaching')"  [ngClass]="{'tab-active':currentSectionId === 'Manager_Coaching'}" style="padding: 10px 15px;"> Manager Coaching</a></div>
+      <div class="col-md-3"><a  class="link_tab" (click)="scrollToSection('Sales_Coaching')" [ngClass]="{'tab-active': currentSectionId === 'Sales_Coaching'}" style="padding: 10px 15px;">Sales Coaching</a></div>
+      <div class="col-md-3"><a class="link_tab" (click)="scrollToSection('Performance_Coaching')" [ngClass]="{'tab-active':currentSectionId === 'Performance_Coaching'}" style="padding: 10px 15px;">Performance Coaching</a>
       </div>
-      <div class="col-md-3"><a  (click)="scrollToSection('Team_Coaching')"  class="link_tab" [ngClass]="{'tab-active':currentSectionId === 'Team_Coaching'}">Team Coaching</a></div>
+      <div class="col-md-3"><a  (click)="scrollToSection('Team_Coaching')"  class="link_tab" [ngClass]="{'tab-active':currentSectionId === 'Team_Coaching'}" style="padding: 10px 15px;">Team Coaching</a></div>
     </div>
   </div>
 </div>

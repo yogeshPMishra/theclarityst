@@ -4054,7 +4054,7 @@ button[type="submit"]:hover {
     display: block;
     color: black;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 1px;
     text-decoration: none;
     font-size: 26px;
     text-align: left;
@@ -4062,6 +4062,7 @@ button[type="submit"]:hover {
 
   .dropdown {
     position: relative;
+    width: fit-content;
   }
 
   .dropdown-content {

@@ -50,7 +50,7 @@ export class SpecialisedCoachingComponent {
     this.navbar = this.elementRef.nativeElement.querySelector('#scroll-fixed');
     this.fixed_tab = this.elementRef.nativeElement.querySelector('#fixed-tab');
 
-    this.sticky = this.navbar.getBoundingClientRect().top;
+    this.sticky = this.navbar.getBoundingClientRect().top +  window.pageYOffset;
 
 
   }

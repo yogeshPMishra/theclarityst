@@ -1,5 +1,5 @@
-import { Component, ElementRef, HostListener } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, ElementRef, HostListener, Renderer2 } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -12,17 +12,30 @@ export class HeaderComponent {
   isNavOpen = false;
   rotateArrow: string = "";
   currentUrl :string= "";
-  constructor(private elementRef: ElementRef,private router:Router) {
+  stickynav: string = "";
+  constructor( private renderer: Renderer2,private router: Router, private elementRef: ElementRef)  {
     console.log(this.router.url);
     this.currentUrl = this.router.url;
   }
   @HostListener('document:click', ['$event'])
-
   onClick(event: MouseEvent) {
     if (!this.elementRef.nativeElement.contains(event.target)) {
+      console.log(this.isNavOpen);
       this.isNavOpen = false;
     }
   }
+  @HostListener('window:scroll')
+  onScroll() {
+    if (window.pageYOffset >= 100) {
+      this.renderer.addClass(this.stickynav, 'sticky');
+    } else {
+      this.renderer.removeClass(this.stickynav, 'sticky');
+    }
+  }
+  ngOnInit(): void {
+    this.stickynav = this.elementRef.nativeElement.querySelector('#sticky-nav');
+  }
+
   submenuOpen1(){
     this.isMenuOpen = !this.isMenuOpen;
     if(this.isMenuOpen){
