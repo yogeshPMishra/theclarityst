@@ -10,28 +10,28 @@
       <!-- <span style="font-size:30px;cursor:pointer" (click)="openNav1()">&#9776; </span> -->
       <div class="navbar_header">
         <ul class="list">
-          <li><a href="#">Home</a></li>
+          <li><a routerLink="/home">Home</a></li>
           <li>
             <div class="dropdown">
-            <button class="dropbtn">Services
+            <button class="dropbtn" routerLink="services">Services
               <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
-              <a href="#">Corporate Coaching</a>
-              <a href="#">Specialised Coaching</a>
-              <a href="#">Micro Coaching</a>
-              <a href="#">Projects</a>
+              <a routerLink="/corporate-coaching">Corporate Coaching</a>
+              <a routerLink="/specialised-coaching">Specialised Coaching</a>
+              <a routerLink="/micro-coaching">Micro Coaching</a>
+              <a routerLink="/projects">Projects</a>
             </div>
           </div>
           </li>
           <li>
             <div class="dropdown">
-              <button class="dropbtn">Unconventional
+              <button class="dropbtn" routerLink="/unconventional">Unconventional
                 <i class="fa fa-caret-down"></i>
               </button>
               <div class="dropdown-content">
-                <a href="#">Podcast</a>
-                <a href="#">Blog</a>
+                <a routerLink="/podcast">Podcast</a>
+                <a routerLink="/blogs">Blog</a>
                 <a href="#">Whitepapers</a>
               </div>
             </div>
@@ -39,15 +39,15 @@
         </ul>
       </div>
 
-     
+
     </div>
     <div class="col-4 d-flex justify-content-end">
-      <a href="javascript:void(0)"
+      <a routerLink="/contact-us"
         class="btn-setting link btn-hvr-up btn-hvr-whatsapp color-black mr-lg-4 d-none d-lg-inline-block"><b> CONTACT</b></a>
     </div>
   </div>
-  
-  
+
+
 </section>
 <header>
 <div class="sidenav-side " [ngClass]="{'opn':isNavOpen}" >
@@ -204,12 +204,12 @@
       <li><i class="fab fa-instagram"></i></li>
       </ul>
       </div>
-  
+
       <div class="-rotate-180 vertical-lr">
-        <a href="#" class="button1 text-black text-14">Contact Us</a>
+        <a routerLink="/contact-us" class="button1 text-black text-14">Contact Us</a>
       </div>
       <div class="-rotate-180 vertical-lr">
-        <a href="#" class="button1 text-black text-14">Membership</a>
+        <a routerLink="#" class="button1 text-black text-14">Membership</a>
       </div>
 </div>
 <!-- <i class="fas fa-user"></i> -->
