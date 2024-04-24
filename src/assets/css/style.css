@@ -486,7 +486,7 @@ a.image{
 .color-white {color: #ffffff;}
 .color-light-gw {color: #f7f7f7;}
 .color-yellow {color: #f1c30f;}
-.color-pink {color: #e57bff;}
+.color-pink {color: #cb55e9;}
 .color-blue {color: #84a1d2;}
 .text-black { color: #212622 !important;}
 .text-yellow {color: #f1c30f !important;}
@@ -4517,4 +4517,20 @@ ul.list li{
   .logo-space{
     padding-left: 25px;
     padding-top: 15px;
+  }
+  .btn_hover:hover{
+    background-color: #007bff;
+    color: #fff !important;
+  }
+  .col_f{
+    color: #07157e;
+  }
+  .col_t{
+    color: #007bff;
+  }
+  .col_ln{
+    color: #07157e;
+  }
+  .col_I{
+    color: purple;
   }

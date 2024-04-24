@@ -1,12 +1,12 @@
 <!-- Header start -->
 <section class="top-header" id="sticky-nav">
   <div class="row no-gutters box_shadow">
-    <div class="col-4 col-lg-4 d-flex logo-space">
+    <div class="col-3 col-lg-4 d-flex logo-space">
       <a class="logo" routerLink="/home">
         <img src="assets/images/logo-mini-dark.png" class="logo-default" alt="logo" title="Logo">
       </a>
     </div>
-    <div class="col-4 col-lg-4 d-flex">
+    <div class="col-3 col-lg-4 d-flex">
       <!-- <span style="font-size:30px;cursor:pointer" (click)="openNav1()">&#9776; </span> -->
       <div class="navbar_header">
         <ul class="list">
@@ -41,9 +41,19 @@
 
 
     </div>
-    <div class="col-4 d-flex justify-content-end">
-      <a routerLink="/contact-us"
-        class="btn-setting link btn-hvr-up btn-hvr-whatsapp color-black mr-lg-4 d-none d-lg-inline-block"><b> CONTACT</b></a>
+    <div class="col-3 d-flex justify-content-end">
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-5">
+          <a routerLink="#" class="button1 text-black text-14 btn-setting btn_hover"><b>Membership</b></a>
+        </div>
+        <div class="col-md-5">
+          <a routerLink="/contact-us"
+        class="btn-setting link btn-hvr-up btn-hvr-whatsapp color-black mr-lg-4 d-none d-lg-inline-block" style="background-color: green;color: white;"><b> CONTACT</b></a>
+        </div>
+      </div>
+      <!-- <a routerLink="/contact-us"
+        class="btn-setting link btn-hvr-up btn-hvr-whatsapp color-black mr-lg-4 d-none d-lg-inline-block"><b> CONTACT</b></a> -->
     </div>
   </div>
 
@@ -198,18 +208,18 @@
 <div class="lqd-stickybar-wrap lqd-stickybar-right items-center justify-center">
   <div>
     <ul>
-      <li><i class="fab fa-facebook-f"></i></li>
-      <li><i class="fab fa-twitter"></i></li>
-      <li><i class="fab fa-linkedin-in"></i></li>
-      <li><i class="fab fa-instagram"></i></li>
+      <li><i class="fab fa-facebook-f col_f"></i></li>
+      <li><i class="fab fa-twitter col_t"></i></li>
+      <li><i class="fab fa-linkedin-in col_ln"></i></li>
+      <li><i class="fab fa-instagram col_I"></i></li>
       </ul>
       </div>
 
       <div class="-rotate-180 vertical-lr">
-        <a routerLink="/contact-us" class="button1 text-black text-14">Contact Us</a>
+        <a routerLink="/contact-us" class="button1 color-pink text-14"><b>Contact Us</b></a>
       </div>
-      <div class="-rotate-180 vertical-lr">
+      <!-- <div class="-rotate-180 vertical-lr">
         <a routerLink="#" class="button1 text-black text-14">Membership</a>
-      </div>
+      </div> -->
 </div>
 <!-- <i class="fas fa-user"></i> -->
