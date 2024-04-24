@@ -897,6 +897,9 @@ section#work .container-fluid {
 .header-appear .logo-default, .header-appear .nav-btn-number {
     opacity: 1;
 }
+.logo-default{
+    margin-left: 25px;
+}
 
 /* nav top default */
 .navbar-top-default{
@@ -4070,6 +4073,10 @@ button[type="submit"]:hover {
   .dropdown-content {
     display: none;
     min-width: 160px;
+    position: absolute;
+    /* left: 0; */
+    background: white;
+    z-index: 99;
   }
 
   .dropdown-content li {
@@ -4331,7 +4338,7 @@ background-position: center top;
 
 
 .navbar_header {
-    overflow: hidden;
+    /* overflow: hidden; */
     /* background-color: #333; */
   }
 
@@ -4348,7 +4355,7 @@ background-position: center top;
   /* Dropdown container */
   .dropdown {
     float: left;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
   
 
@@ -4363,7 +4370,9 @@ background-position: center top;
     margin: 0;
   }
 
-  
+  .top-header{
+    overflow: unset;
+  }
 
   /* Links inside the dropdown */
   .dropdown-content a {
@@ -4403,9 +4412,9 @@ background-position: center top;
       float: none;
     }
 
-    .dropdown-content {
+    /* .dropdown-content {
       position: relative;
-    }
+    } */
 
     .dropdown:hover .dropdown-content {
       display: block;
@@ -4501,4 +4510,11 @@ background-position: center top;
 ul.list li{
     width: auto;
     float: left;
+  }
+  .box_shadow{
+    box-shadow: 0 22px 50px 0 rgba(0,0,0,.15);
+  }
+  .logo-space{
+    padding-left: 25px;
+    padding-top: 15px;
   }
