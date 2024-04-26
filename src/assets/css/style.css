@@ -666,13 +666,13 @@ nav .btn-setting {
 .btn-hvr-white:hover, .btn-hvr-white:focus {
     border-color: #ffffff;
 }
-.btn-hvr-whatsapp:after {
+/* .btn-hvr-whatsapp:after {
     background-color: #25d366;
 }
 .btn-hvr-whatsapp:hover, .btn-hvr-whatsapp:focus {
     border-color: #25d366;
     color: #ffffff;
-}
+} */
 /* border radius */
 .radius-small {
     border-radius: 4px;
@@ -4518,14 +4518,19 @@ ul.list li{
     padding-left: 25px;
     padding-top: 15px;
   }
-  .btn_hover:hover{
-    background-color: #007bff;
+  .btn_hover{
+    background-color: black;
     color: #fff !important;
   }
   .col_f{
-    color: #07157e;
+    color: white;
+    background-color: #202020;
+    /* padding: 5px; */
+    width: 20px;
+    height: 20px;
+    padding: 3px;
   }
-  .col_t{
+  /* .col_t{
     color: #007bff;
   }
   .col_ln{
@@ -4533,4 +4538,16 @@ ul.list li{
   }
   .col_I{
     color: purple;
+  } */
+
+  .bg_color{
+    background-color: #202020;
+    color: white;
+    padding: 5px;
+
   }
+
+
+
+
+ 
