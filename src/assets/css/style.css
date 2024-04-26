@@ -4546,6 +4546,10 @@ ul.list li{
     padding: 5px;
 
   }
+  .bg_color:hover{
+    background-color: white;
+    color: black;
+  }
 
 
 
