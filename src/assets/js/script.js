@@ -547,3 +547,6 @@ function closeNav() {
 //   $('html, body').animate({scrollTop:0}, '300');
 // });
 
+document.getElementById("myButton").addEventListener("click", function() {
+    this.classList.toggle("clicked");
+  });

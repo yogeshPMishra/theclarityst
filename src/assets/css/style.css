@@ -710,7 +710,9 @@ nav .btn-setting {
           Top Header section
 ====================================== */
 .top-header {
-    padding: 20px 75px;
+    padding: 20px 0px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 /* .hmeslidr{
     padding: 20px 75px;
@@ -750,9 +752,10 @@ nav .btn-setting {
     margin-right: 25px;
 }
 section#home {
-    margin: 0px 75px;
+    margin: 0px 30px;
     box-shadow: 0 22px 50px 0 rgba(0,0,0,.15);
     border-radius: 5px;
+   
 }
 .top-header .slider-social{
     margin-left: 20px;
@@ -3753,7 +3756,7 @@ ul.rounded li::before {
     border-bottom-color: #777;
     border-bottom-width: 1px;
     /* font-weight: bolder; */
-    margin-left: 40px;
+    /* margin-left: 40px; */
 
   }
 
@@ -4090,6 +4093,9 @@ button[type="submit"]:hover {
     display: block;
     font-size: 20px;
   }
+  .dropdown-content a:hover{
+    color: #202020;
+  }
   .dropdown:hover .dropdown-content {
     display: block;
   }
@@ -4101,7 +4107,9 @@ button[type="submit"]:hover {
     display: none;
   }
 
-
+  .dropdown .dropbtn.clicked {
+    text-decoration: underline;
+  }
 
   .sub-dropdown-content {
     display: none;
@@ -4494,11 +4502,12 @@ background-position: center top;
     padding-top: var(--padding-top);
     padding-bottom: var(--padding-bottom);
     position: fixed !important;
-    top: 0;
+    /* top: 0; */
     z-index: 10;
     background: 0 0 !important;
     background-color: none;
     flex-direction: column;
+    padding-left: 76px;
 }
 .vertical-lr {
     writing-mode: vertical-lr;
@@ -4523,12 +4532,12 @@ ul.list li{
     color: #fff !important;
   }
   .col_f{
-    color: white;
-    background-color: #202020;
+    color: black;
+    /* background-color: #202020; */
     /* padding: 5px; */
-    width: 20px;
+    /* width: 20px;
     height: 20px;
-    padding: 3px;
+    padding: 3px; */
   }
   /* .col_t{
     color: #007bff;
@@ -4541,17 +4550,43 @@ ul.list li{
   } */
 
   .bg_color{
-    background-color: #202020;
-    color: white;
-    padding: 5px;
+    /* background-color: #202020; */
+    color: black;
+    /* padding: 5px; */
 
   }
-  .bg_color:hover{
+  /* .bg_color:hover{
     background-color: white;
     color: black;
-  }
+  } */
 
-
-
-
+.p-20{
+    padding-left: 20px;
+}
+.pd-3{
+    padding: 50px;
+}
+.blog_sec{
+    padding-left: 40px;
+    padding-right: 30px;
+}
+.contact_sec{
+    padding-left: 40px;
+    padding-right: 30px;
+}
+.footer_sec{
+    padding-left: 50px;
+    padding-right: 30px; 
+}
+.about_sec{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.work_sec{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.accordion_sec{
+    margin-left: 30px;
+}
  
