@@ -2643,6 +2643,7 @@ button.sbt:hover{
     font-size: 13px;
     line-height: normal;
     margin-top: 20px;
+    text-align: justify;
 }
 .contact-para-setting {
     max-width: 480px;
