@@ -755,7 +755,7 @@ section#home {
     margin: 0px 30px;
     box-shadow: 0 22px 50px 0 rgba(0,0,0,.15);
     border-radius: 5px;
-   
+
 }
 .top-header .slider-social{
     margin-left: 20px;
@@ -4202,7 +4202,7 @@ button[type="submit"]:hover {
     padding-top: 60px;
 }
 
-.unconventional-blog .tag {
+  .unconventional-blog .tag {
     padding: .25em .75em;
     border-radius: 1em;
     font-size: .75rem;
@@ -4222,9 +4222,9 @@ button[type="submit"]:hover {
     color: white;
     height: 400px;
     background-repeat: no-repeat;
-background-size: cover;
-padding-bottom: 80px;
-background-position: center top;
+    background-size: cover;
+    padding-bottom: 80px;
+    background-position: center top;
   }
 
   .unconventional_banner{
@@ -4365,7 +4365,7 @@ background-position: center top;
     float: left;
     /* overflow: hidden; */
   }
-  
+
 
   /* Dropdown button */
   .dropdown .dropbtn {
@@ -4440,7 +4440,7 @@ background-position: center top;
     position: fixed;
     bottom: 30px;
     right: -15px;
-    transition: background-color .3s, 
+    transition: background-color .3s,
       opacity .5s, visibility .5s;
     opacity: 0;
     visibility: hidden;
@@ -4466,12 +4466,12 @@ background-position: center top;
     opacity: 1;
     visibility: visible;
   }
-  
 
-  
- 
+
+
+
   @media (min-width: 500px) {
-    
+
     #button_scroll {
       margin: 30px;
     }
@@ -4576,7 +4576,7 @@ ul.list li{
 }
 .footer_sec{
     padding-left: 50px;
-    padding-right: 30px; 
+    padding-right: 30px;
 }
 .about_sec{
     margin-left: 30px;
@@ -4589,4 +4589,3 @@ ul.list li{
 .accordion_sec{
     margin-left: 30px;
 }
- 

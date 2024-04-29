@@ -13,6 +13,7 @@ export class HeaderComponent {
   rotateArrow: string = "";
   currentUrl :string= "";
   stickynav: string = "";
+  active_url : string = "";
   constructor( private renderer: Renderer2,private router: Router, private elementRef: ElementRef)  {
     console.log(this.router.url);
     this.currentUrl = this.router.url;
@@ -34,6 +35,8 @@ export class HeaderComponent {
   }
   ngOnInit(): void {
     this.stickynav = this.elementRef.nativeElement.querySelector('#sticky-nav');
+    this.active_url =  this.router.url;
+    console.log(this.active_url);
   }
 
   submenuOpen1(){

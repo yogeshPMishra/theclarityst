@@ -13,7 +13,7 @@
           <li><a routerLink="/home">Home</a></li>
           <li>
             <div class="dropdown">
-            <button class="dropbtn" routerLink="services"id="myButton">Services
+            <button class="dropbtn" routerLink="/services" id="myButton" [ngStyle]="active_url == '/services' ? {'text-decoration': 'underline'} : {'text-decoration': 'none'}">Services
               <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
@@ -26,7 +26,7 @@
           </li>
           <li>
             <div class="dropdown">
-              <button class="dropbtn" routerLink="/unconventional" id="myButton">Unconventional
+              <button class="dropbtn" routerLink="/unconventional" id="myButton" [ngStyle]="active_url == '/unconventional' ? {'text-decoration': 'underline'} : {'text-decoration': 'none'}">Unconventional
                 <i class="fa fa-caret-down"></i>
               </button>
               <div class="dropdown-content">
@@ -205,18 +205,18 @@
 
 
 <!-- <a id="button_scroll"></a> -->
-<div class="lqd-stickybar-wrap lqd-stickybar-right items-center justify-center">
-  <div>
-    <ul>
-      <li><i class="fab fa-facebook-f col_f invert_colour"></i></li>
-      <li><i class="fab fa-twitter col_f"></i></li>
-      <li><i class="fab fa-linkedin-in col_f"></i></li>
-      <li><i class="fab fa-instagram col_f"></i></li>
+<div class="lqd-stickybar-wrap lqd-stickybar-right items-center justify-center" style="mix-blend-mode: difference;">
+    <div>
+      <ul>
+          <li style="color:rgb(255, 255, 255)"><i class="fab fa-facebook-f  invert_colour"></i></li>
+          <li style="color:rgb(255, 255, 255)"><i class="fab fa-twitter "></i></li>
+          <li style="color:rgb(255, 255, 255)"><i class="fab fa-linkedin-in "></i></li>
+          <li style="color:rgb(255, 255, 255)"><i class="fab fa-instagram "></i></li>
       </ul>
-      </div>
+    </div>
 
       <div class="-rotate-180 vertical-lr">
-        <a routerLink="#" class="text-14 bg_color"><b> info@theclarityst.com</b></a>
+        <a routerLink="#" class="text-14" style="color:rgb(255, 255, 255)"><b> info@theclarityst.com</b></a>
       </div>
       <!-- <div class="-rotate-180 vertical-lr">
         <a routerLink="#" class="button1 text-black text-14">Membership</a>
