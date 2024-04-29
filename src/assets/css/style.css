@@ -712,7 +712,7 @@ nav .btn-setting {
 .top-header {
     padding: 20px 0px;
     padding-left: 30px;
-    padding-right: 30px;
+    padding-right: 50px;
 }
 /* .hmeslidr{
     padding: 20px 75px;
@@ -744,8 +744,9 @@ nav .btn-setting {
 .main-title-crtv{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    /* justify-content: center; */
     margin-bottom: 35px;
+    margin-left: 30px;
 }
 .main-title-crtv h2 {
     font-size: 85px;
@@ -753,8 +754,9 @@ nav .btn-setting {
 }
 section#home {
     margin: 0px 30px;
-    box-shadow: 0 22px 50px 0 rgba(0,0,0,.15);
+    box-shadow: 0 22px 50px 0 rgba(0, 0, 0, .15);
     border-radius: 5px;
+    margin-right: 50px;
 
 }
 .top-header .slider-social{
@@ -4507,7 +4509,7 @@ button[type="submit"]:hover {
     background: 0 0 !important;
     background-color: none;
     flex-direction: column;
-    padding-left: 76px;
+    padding-left: 35px;
 }
 .vertical-lr {
     writing-mode: vertical-lr;
@@ -4565,18 +4567,19 @@ ul.list li{
 }
 .pd-3{
     padding: 50px;
+    /* margin-right: 30px; */
 }
 .blog_sec{
-    padding-left: 40px;
+    padding-left: 30px;
     padding-right: 30px;
 }
 .contact_sec{
-    padding-left: 40px;
-    padding-right: 30px;
+    padding-left: 30px;
+    padding-right: 55px;
 }
 .footer_sec{
-    padding-left: 50px;
-    padding-right: 30px;
+    padding-left: 25px;
+    padding-right: 55px;
 }
 .about_sec{
     margin-left: 30px;
@@ -4584,8 +4587,16 @@ ul.list li{
 }
 .work_sec{
     margin-left: 30px;
-    margin-right: 30px;
+    margin-right: 45px;
 }
 .accordion_sec{
     margin-left: 30px;
+    margin-right: 20px;
+}
+.animate-text{
+    margin-left: 30px;
+}
+.slider_pd{
+    margin-left: 30px;
+    margin-right: 50px;
 }
