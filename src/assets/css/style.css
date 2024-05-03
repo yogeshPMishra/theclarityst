@@ -2637,7 +2637,7 @@ button.sbt:hover{
     margin-right: 10px;
 }
 .bx-abt-btm h4 {
-    font-size: 20px;
+    font-size: 19px;
 }
 .bx-abt-btm p{
     font-size: 13px;
@@ -3775,9 +3775,9 @@ ul.rounded li::before {
     margin-left: 5px;
   }
 
-  .active:after {
+  /* .active:after {
     content: "\2212";
-  }
+  } */
 
   .panel {
     padding: 0 18px;
@@ -4082,7 +4082,7 @@ button[type="submit"]:hover {
     position: absolute;
     /* left: 0; */
     background: white;
-    z-index: 99;
+    z-index: 9999;
   }
 
   .dropdown-content li {
@@ -4510,7 +4510,7 @@ button[type="submit"]:hover {
     background: 0 0 !important;
     background-color: none;
     flex-direction: column;
-    padding-left: 35px;
+    padding-left: 50px;
 }
 .vertical-lr {
     writing-mode: vertical-lr;
@@ -4600,4 +4600,21 @@ ul.list li{
 .slider_pd{
     margin-left: 30px;
     margin-right: 50px;
+}
+.calendy-section{
+  margin-top: -100px;
+  margin-bottom: 0px;
+  z-index: 2;
+  position: relative;
+  border-radius: 10px;
+}
+.calendy-background-img{
+    background-color: #ffffff;
+  background-image: url("../images/home5_bg.jpg");
+  background-size: contain;
+  background-position: center right;
+  background-repeat: no-repeat;
+  padding: 70px 70px 70px 70px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 60px 0px rgba(0,0,0,0.1);
 }

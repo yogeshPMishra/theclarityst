@@ -1,0 +1,28 @@
+.carousel-fade .carousel-item.active{
+    z-index: auto;
+}
+.leading-1em{
+    position: absolute;
+    z-index: 999;
+    padding: 4rem 4rem 1rem;
+    font-size: 25px;
+    padding-right: 22%;
+    letter-spacing: 0px;
+    font-weight: 600;
+    line-height: 35px;
+    font-family: "Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+.btn-calendy{
+    background-color: #fff;
+    color: #000;
+    /* padding: 20px; */
+    margin: 5px;
+    font-weight: 600;
+}
+.btn-calendy-2{
+    background-color: #bba07a;
+    color: #fff !important;
+    /* padding: 20px; */
+    margin: 5px;
+    font-weight: 600;
+}
